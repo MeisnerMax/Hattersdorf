@@ -1,0 +1,565 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header und Navigation */
+header {
+    background-color: #2c4f2d;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+
+nav ul li a:hover {
+    background-color: #2c4f2d;
+    transform: scale(1.05);
+}
+
+/* Parallax Hero-Banner */
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: #fff; /* Setzt die Textfarbe auf Weiß */
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #fff; /* Setzt die Textfarbe auf Weiß */
+}
+
+
+.hero-content {
+    max-width: 600px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+/* CTA-Buttons */
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    margin: 10px;
+    background-color: #2c4f2d;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #2c4f2d;
+    transform: scale(1.05);
+}
+
+.cta-button.small {
+    padding: 8px 16px;
+    font-size: 0.9em;
+}
+
+/* Hauptinhalt und Abschnittsüberschriften */
+main {
+    max-width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+section {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #2c4f2d;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+/* Produktkarten Layout */
+.product-highlight {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Testimonials */
+.testimonial-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.testimonial-slider blockquote {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+    width: 300px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f8f8f8;
+    border-left: 4px solid #2c4f2d;
+    font-style: italic;
+    text-align: center; 
+}
+
+cite {
+    display: block;
+    text-align: right;
+    font-size: 0.9em;
+    color: #2c4f2d;
+    margin-top: 10px;
+}
+
+/* "Zurück nach oben"-Button */
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #2c4f2d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #2c4f2d;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+/* Horizontale Produktliste */
+.produkt-list-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.produkt-list-horizontal::-webkit-scrollbar {
+    height: 10px;
+}
+
+.produkt-list-horizontal::-webkit-scrollbar-thumb {
+    background-color: #2c4f2d;
+    border-radius: 5px;
+}
+
+.produkt-list-horizontal::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+/* Team Layout */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #2c4f2d;
+}
+
+.team-member p {
+    color: #666;
+}
+
+/* Verbesserte Typografie */
+p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center; 
+}
+
+/* Kontaktformular */
+.kontakt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.kontakt-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.kontakt-form input, 
+.kontakt-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.kontakt-form input:focus, 
+.kontakt-form textarea:focus {
+    border-color: #2c4f2d;
+    box-shadow: 0 0 5px rgba(44, 79, 45, 0.3);
+}
+
+.kontakt-form button.cta-button {
+    padding: 12px 24px;
+    background-color: #2c4f2d;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.kontakt-form button.cta-button:hover {
+    background-color: #3b8b40;
+    transform: scale(1.05);
+}
+
+/* Tierkarten Layout */
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tier-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tier-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tier-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tier-card h2 {
+    margin: 10px 0 5px;
+    color: #2c4f2d;
+}
+
+.tier-card p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Horizontale Produktliste */
+.produkt-list-horizontal {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.produkt-list-horizontal::-webkit-scrollbar {
+    height: 10px;
+}
+
+.produkt-list-horizontal::-webkit-scrollbar-thumb {
+    background-color: #2c4f2d;
+    border-radius: 5px;
+}
+
+.produkt-list-horizontal::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+/* Produktkarte */
+.produkt-card {
+    flex: 0 0 auto; /* Fixiert die Breite der Karten */
+    width: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produkt-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.produkt-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Verkaufsstellenliste mit horizontaler Scrollleiste */
+.verkaufsstellen-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Ermöglicht horizontales Scrollen */
+    scroll-snap-type: x mandatory; /* Erzeugt ein "Snap"-Verhalten beim Scrollen */
+    padding-bottom: 10px; /* Platz für Scrollleiste */
+}
+
+.verkaufsstellen-list img {
+    width: 100%; /* Die Breite des Bildes nimmt den gesamten verfügbaren Platz ein */
+    height: 200px; /* Eine feste Höhe für ein rechteckiges Format */
+    object-fit: cover; /* Sorgt dafür, dass das Bild im Rechteck gut aussieht */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.verkaufsstellen-list li {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 300px; /* Mindestbreite für jeden Verkaufsstellen-Eintrag */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    scroll-snap-align: center; /* Zentriert die Verkaufsstellen beim Scrollen */
+}
+
+.verkaufsstellen-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.verkaufsstellen-list img {
+    width: 150px; /* Quadratisches Bild */
+    height: 150px; /* Quadratisches Bild */
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.verkaufsstellen-list div {
+    flex-grow: 1;
+}
+
+.verkaufsstellen-list h2 {
+    margin: 10px 0 5px;
+    font-size: 1.2em;
+    color: #2c4f2d;
+}
+
+.verkaufsstellen-list p {
+    margin: 0;
+    color: #666;
+}
+
+/* Scrollbar für moderne Browser */
+.verkaufsstellen-list::-webkit-scrollbar {
+    height: 8px;
+}
+
+.verkaufsstellen-list::-webkit-scrollbar-thumb {
+    background-color: #2c4f2d;
+    border-radius: 5px;
+}
+
+.verkaufsstellen-list::-webkit-scrollbar-track {
+    background-color: #f4f4f4;
+}
+
+/* Footer-Link */
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+/* Footer-Link */
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ddd;
+}
+
+/* Zentrierung der Buttons in den jeweiligen Abschnitten */
+.about-section, .events {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Zentriert die Buttons horizontal */
+    text-align: center;
+}
+
+.about-section .cta-button, .events .cta-button {
+    margin-top: 15px; /* Abstand oberhalb des Buttons */
+}
+
+/* Galerie-Grid */
+.galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.galerie-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.galerie-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer-Link */
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #ddd;
+}
